@@ -1,0 +1,238 @@
+@import "global";
+@import "mixin";
+@import "reset";
+#header{
+  background:linear-gradient( 50deg,#b42be2, #3a0549) ;
+  height: 180px;
+  font-family: $font;
+    .nav{
+      &--tittle{
+      @include df();
+      &__head{
+        @include center();
+        width: 500px;
+        a{
+          font-family: $font;
+          padding-top: 40px;
+          font-weight: 300;
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+      }
+      &__chat{
+        @include sau();
+        width: 200px;
+        height: 30px;
+        background: #e30c9b;
+        border-radius: 30px ;
+        margin-top: 40px;
+        h1{
+          font-family: $font;
+          font-weight: 400;
+          font-size: 14px;
+          color: #FFFFFF;
+        }
+        ion-icon{
+          color: #FFFFFF;
+        }
+      }
+    }
+      &--found{
+        @include df();
+        margin-top: 25px;
+       &__burger{
+         font-size: 30px;
+       }
+        &__look{
+          color: white;
+          position: absolute;
+          left: 515px;
+        }
+        &__looks{
+          color: white;
+          position: absolute;
+          left: 979px;
+        }
+        h2{
+          font-weight: 500;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+        input{
+          //position: relative;
+          width: 500px;
+          height: 40px;
+          background: rgba(196, 196, 196, 0.25);
+          border-radius: 31px;
+        }
+        ::placeholder{
+          color: white;
+        }
+        &__file{
+          @include df();
+          width: 200px;
+          &--one{
+            h1{
+              font-weight: 300;
+              font-size: 14px;
+              color: #FFFFFF;
+            }
+            ion-icon{
+              font-size: 20px;
+              color: white;
+            }
+          }
+          &--two{
+            h1{
+              font-weight: 300;
+              font-size: 14px;
+              color: #FFFFFF;
+            }
+            ion-icon{
+              font-size: 20px;
+              color: white;
+            }
+          }
+          &--three{
+            h1{
+              font-weight: 300;
+              font-size: 14px;
+              color: #FFFFFF;
+            }
+            ion-icon{
+              font-size: 20px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+}
+
+#hero{
+  font-family: $font;
+  .hero{
+    &--img{
+      margin: 20px 0;
+    }
+    &--sell{
+      @include df();
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      &__sms{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #b42be2;
+        ion-icon{
+          font-size: 20px;
+          color: white;
+          margin: 10px 10px;
+        }
+
+      }
+    }
+    &--block{
+     @include blocks();
+    }
+    &--number{
+      &--row{
+        @include center();
+        width: 156px;
+        h1{
+        @include tea();
+        }
+        &__line{
+         @include grow();
+        }
+        h3{
+        @include teas();
+        }
+        &__lines{
+         @include grows();
+        }
+      }
+      h2{
+     @include follow();
+      }
+
+
+    }
+    &--mean{
+      @include moon();
+      padding: 30px 50px;
+    }
+  }
+}
+
+#short{
+  font-family: $font;
+  .short{
+    &--img{
+      margin: 20px 15px;
+    }
+    &--text {
+      &__dote {
+        width: 61px;
+        height: 61px;
+        background: #D118A8;
+        border-radius: 50%;
+
+        ion-icon {
+          color: white;
+          padding: 10px 13px;
+          font-size: 37px;
+        }
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+    }
+    &--all{
+      @include moon();
+    }
+    &--open{
+      width: 160px;
+      height: 400px;
+      &--little{
+        @include blocks();
+      }
+    &--tittle{
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      &__square{
+     @include grow();
+      }
+      h3{
+       @include teas();
+      }
+      &__alex{
+        position: absolute;
+        left: 145px;
+        width: 49px;
+        height: 0px;
+        border: 0.5px solid #716A6A;
+      }
+      &__stood{
+        width: 7px;
+        height: 10px;
+        border: 0.5px solid #716A6A;
+      }
+    }
+      &__black{
+        h4{
+          @include teas();
+          padding: 5px 0;
+        }
+      }
+    }
+
+  }
+}
